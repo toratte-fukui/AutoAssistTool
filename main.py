@@ -1,6 +1,8 @@
 from lib.scraping_tool import ScrapingTool
+from selenium.webdriver.common.by import By
 
-ScrapingTool(
-  url="https://www.frontier-direct.jp/direct/e/ej-sale/",
-  chrome_driver="./bin/chromedriver"
+tool = ScrapingTool(
+  url="https://google.com",
 )
+# list_details = tool.driver.find_elements(By.CLASS_NAME, "iw-list-detail")
+# print(list_details)
